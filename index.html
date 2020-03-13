@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Javascript">
+    <meta name="keywords" content="Javascript, HTML, Crossover">
+    <meta name="author" content="Daria Bernice Calitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 6</title>
+  </head>
+  <body>
+    <h1>Area of a Square</h1>
+    <p>Enter the side length of the Square</p>
+    <input type="text" id="length">
+    <button id="button">Calculate</button>
+  </body>
+  <script>
+  "use strict";
+    document.getElementById("button").addEventListener("click", squareArea)
+    function squareArea() {
+      let side;
+      let area;
+      side = document.getElementById("length").value;
+      area = side * side;
+      alert("The area of the square is " + area);
+    }
+  </script>
+</html>
